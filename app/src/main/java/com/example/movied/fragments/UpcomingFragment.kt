@@ -1,4 +1,4 @@
-package com.example.movied
+package com.example.movied.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,7 +8,9 @@ import android.view.ViewGroup
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.movied.R
 import com.example.movied.adapters.MovieAdapter
+import com.example.movied.viewmodels.UpcomingViewModel
 import kotlinx.android.synthetic.main.fragment_upcoming.recyclerview
 
 class UpcomingFragment : Fragment() {

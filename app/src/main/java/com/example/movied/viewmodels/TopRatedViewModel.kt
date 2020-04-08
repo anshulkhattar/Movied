@@ -1,8 +1,10 @@
-package com.example.movied
+package com.example.movied.viewmodels
 
 import android.content.ContentValues
 import android.util.Log
 import androidx.lifecycle.*
+import com.example.movied.ApiInterface
+import com.example.movied.RetrofitClient
 import com.example.movied.models.Movie
 import com.example.movied.models.MovieDetails
 import retrofit2.Call
@@ -27,7 +29,8 @@ class TopRatedViewModel : ViewModel() {
     }
 
     fun loadTopRatedMovies(){
-            mApiService = RetrofitClient.client.create(ApiInterface::class.java)
+            mApiService = RetrofitClient.client.create(
+                ApiInterface::class.java)
             val call = mApiService!!.getTopRatedMovies(RetrofitClient.api_key)
             call.enqueue(object : Callback<Movie> {
 

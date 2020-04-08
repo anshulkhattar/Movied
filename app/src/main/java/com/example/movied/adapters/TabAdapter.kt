@@ -5,8 +5,8 @@ import android.content.Context
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
-import com.example.movied.TopRatedFragment
-import com.example.movied.UpcomingFragment
+import com.example.movied.fragments.TopRatedFragment
+import com.example.movied.fragments.UpcomingFragment
 
 class TabAdapter(private val myContext: Context, fm: FragmentManager, internal var totalTabs: Int) : FragmentPagerAdapter(fm) {
 

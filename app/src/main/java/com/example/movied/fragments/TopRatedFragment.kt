@@ -1,17 +1,16 @@
-package com.example.movied
+package com.example.movied.fragments
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.movied.R
 import com.example.movied.adapters.MovieAdapter
-import com.example.movied.models.MovieDetails
+import com.example.movied.viewmodels.TopRatedViewModel
 import kotlinx.android.synthetic.main.fragment_top_rated.*
 
 
